@@ -4,7 +4,7 @@ import { IoTvOutline } from "react-icons/io5";
 import { BiMoviePlay } from "react-icons/bi";
 import { FaFireAlt } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
-import MovieIcon from "d:/React 25/Feb 25/MovieSite/src/assets/MovieIcon.png";
+import MovieIcon from "./assets/MovieIcon.png";
 
 const Header = () => {
   const [toggle, settoggle] = useState(false);
