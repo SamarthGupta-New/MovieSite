@@ -14,11 +14,10 @@ const TvSeries = () => {
   const genreforURL = useGenres(selectedGenres);
 
   const Api_Key = "070ddf6f0ab61f11b00dc960ce90b129";
-  const Url = `https://api.themoviedb.org/3/discover/movie?api_key=070ddf6f0ab61f11b00dc960ce90b129&page=${page}`;
-  const Url2 = `https://api.themoviedb.org/3/discover/tv?api_key=${Api_Key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`;
+  const Url = `https://api.themoviedb.org/3/discover/tv?api_key=${Api_Key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`;
 
   async function fetchData() {
-    const resp = await fetch(Url2);
+    const resp = await fetch(Url);
     const data = await resp.json();
     setMovies(data.results);
     setnumOfPages(data.total_pages > 500 ? 500 : data.total_pages);
@@ -30,7 +29,7 @@ const TvSeries = () => {
 
   return (
     <div className="flex pt-26 w-full bg-black flex-col items-center">
-      <h1 className=" font-semibold text-lg text-gray-100">TV SERIES</h1>
+      <h1 className=" font-semibold text-xl text-gray-100">Tv Series</h1>
       <Genres
         type="tv"
         selectedGenres={selectedGenres}

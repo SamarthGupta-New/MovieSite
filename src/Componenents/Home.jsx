@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div className="flex pt-26 bg-black flex-col px-auto items-center">
-      <h1 className=" font-semibold text-lg text-gray-100">Trending</h1>
+      <h1 className=" font-semibold text-xl text-gray-100">Trending</h1>
       <div className=" text-gray-100 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {movies.map((c) => (
           <Card key={c.id} id={c.id} media_type={c.media_type} value={c} />

@@ -30,7 +30,7 @@ const Movies = () => {
 
   return (
     <div className="flex pt-26 w-full bg-black flex-col items-center">
-      <h1 className=" font-semibold text-lg text-gray-100">MOVIES</h1>
+      <h1 className=" font-semibold text-xl text-gray-100">Movies</h1>
       <Genres
         type="movie"
         selectedGenres={selectedGenres}
