@@ -82,7 +82,7 @@ const Search = () => {
           <Tab style={{ width: "50%" }} label="Search Tv Series" />
         </Tabs>
       </ThemeProvider>
-      <div className=" text-gray-100 grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+      <div className=" text-gray-100 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 p-1">
         {content &&
           content.map((c) => (
             <Card

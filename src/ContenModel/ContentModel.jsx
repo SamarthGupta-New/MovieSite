@@ -8,6 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Button from "@mui/material/Button";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { IoIosClose } from "react-icons/io";
 import {
   unavailable,
   img_500,
@@ -87,6 +88,14 @@ export default function ContentModal({ children, media_type, id }) {
           <Box sx={style}>
             {content && (
               <div className="flex flex-col md:flex-row text-gray-300 justify-between">
+                <div className="button flex  md:hidden justify-end mb-1">
+                  <button
+                    onClick={handleClose}
+                    className="flex justify-center cursor-pointer items-center w-7 h-7"
+                  >
+                    <IoIosClose />
+                  </button>
+                </div>
                 <img
                   className="hidden md:block object-contain  w-full md:w-1/3"
                   src={

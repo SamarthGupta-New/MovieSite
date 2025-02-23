@@ -30,7 +30,7 @@ const Header = () => {
             e.stopPropagation();
           }}
           style={{ right: toggle ? "0" : "-100%" }}
-          className="bg-black text-gray-200 ease-in-out duration-500 mt-7 absolute w-[300px] h-full"
+          className="bg-black text-gray-200 ease-in-out duration-500 mt-7 absolute w-[300px] h-[30%]"
         >
           <div className="list-none">
             <li

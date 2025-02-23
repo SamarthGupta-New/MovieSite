@@ -8,10 +8,10 @@ const Card = ({ value, media_type, id }) => {
   return (
     <ContentModal media_type={media_type} id={value.id}>
       <div className="p-3">
-        <div className="relative w-[200px] h-[300px] transition-transform duration-300 ease-in-out transform hover:scale-120 hover:z-20">
+        <div className="relative w-[160px] h-[240px] sm:w-[200px] sm:h-[300px] transition-transform duration-300 ease-in-out transform hover:scale-120 hover:z-20">
           {/* Movie Poster */}
           <img
-            className="h-[270px] w-[190px] m-1 rounded-xl object-cover"
+            className="sm:h-[270px] sm:w-[190px] h-[218px] w-[152px] m-1 rounded-xl object-cover"
             src={
               value.poster_path ? `${img_300}${value.poster_path}` : unavailable
             }
