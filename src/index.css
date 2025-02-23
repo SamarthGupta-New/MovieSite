@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* body {
+  font-family: "poppins";
+} */
+* {
+  scroll-behavior: smooth;
+}
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@import "react-alice-carousel/lib/alice-carousel.css";
