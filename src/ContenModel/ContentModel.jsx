@@ -91,9 +91,9 @@ export default function ContentModal({ children, media_type, id }) {
                 <div className="button flex  md:hidden justify-end mb-1">
                   <button
                     onClick={handleClose}
-                    className="flex justify-center cursor-pointer items-center w-7 h-7"
+                    className="flex justify-center cursor-pointer items-cente"
                   >
-                    <IoIosClose />
+                    <IoIosClose className="w-7 h-7" />
                   </button>
                 </div>
                 <img
