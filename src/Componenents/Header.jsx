@@ -4,7 +4,7 @@ import { IoTvOutline } from "react-icons/io5";
 import { BiMoviePlay } from "react-icons/bi";
 import { FaFireAlt } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
-import MovieIcon from "./assets/MovieIcon.png";
+import { RiMovie2Line } from "react-icons/ri";
 
 const Header = () => {
   const [toggle, settoggle] = useState(false);
@@ -74,7 +74,7 @@ const Header = () => {
             onClick={() => window.scroll(0, 0)}
             className="cursor-pointer text-2xl"
           >
-            <img className="w-10 h-10" src={MovieIcon} alt="" />
+            <RiMovie2Line className="w-8 h-8 " />
           </p>
           <div>
             <button
