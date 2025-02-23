@@ -30,7 +30,7 @@ const Header = () => {
             e.stopPropagation();
           }}
           style={{ right: toggle ? "0" : "-100%" }}
-          className="bg-black text-gray-200 ease-in-out duration-500 mt-7 absolute w-[300px] h-[30%]"
+          className="bg-black text-gray-200 ease-in-out duration-500 mt-7 absolute w-[300px] h-[40%]"
         >
           <div className="list-none">
             <li
@@ -68,7 +68,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full absolute lg:text-xl  flex bg-black pb-6 z-100 text-gray-200">
+      <div className="w-full fixed lg:text-xl  flex bg-black pb-6 z-100 text-gray-200">
         <nav className="flex w-full py-3 justify-between px-5 mx-auto">
           <p
             onClick={() => window.scroll(0, 0)}
